@@ -1,0 +1,52 @@
+/* ── Settings panel ─────────────────────────────────────────── */
+.chatbox-decorator-settings .chatbox-decorator-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.chatbox-decorator-settings .chatbox-decorator-hint {
+    font-size: 0.8em;
+    opacity: 0.7;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* ── Corner decoration emojis ───────────────────────────────── */
+.chatbox-deco {
+    position: fixed;
+    font-size: 2rem;
+    z-index: 9999;
+    pointer-events: none;
+    line-height: 1;
+    animation: chatbox-deco-float 3s ease-in-out infinite;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Position each corner relative to the chat input area */
+.chatbox-deco-tl {
+    bottom: 100px;
+    left: 12px;
+    animation-delay: 0s;
+}
+.chatbox-deco-tr {
+    bottom: 100px;
+    right: 12px;
+    animation-delay: 0.75s;
+}
+.chatbox-deco-bl {
+    bottom: 12px;
+    left: 12px;
+    animation-delay: 1.5s;
+}
+.chatbox-deco-br {
+    bottom: 12px;
+    right: 12px;
+    animation-delay: 2.25s;
+}
+
+@keyframes chatbox-deco-float {
+    0%, 100% { transform: translateY(0px) rotate(-5deg); }
+    50%       { transform: translateY(-6px) rotate(5deg); }
+}
