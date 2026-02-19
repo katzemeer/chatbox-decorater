@@ -1,0 +1,11 @@
+{
+  "display_name": "Chatbox Decorator 🌸",
+  "loading_order": 100,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "You",
+  "version": "1.0.0",
+  "homePage": "https://github.com/you/chatbox-decorator"
+}
